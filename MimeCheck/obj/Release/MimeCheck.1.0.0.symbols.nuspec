@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MimeCheck</id>
+    <version>1.0.0</version>
+    <authors>Vijay Pratap Singh</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/vijaysingh/MimeCheck</projectUrl>
+    <description>A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats including images, documents, archives, audio/video, and executables. Includes ASP.NET Core integration with validation attributes, middleware, and dependency injection support.</description>
+    <tags>mime mimetype file-validation magic-bytes file-type content-type security aspnetcore file-upload validation</tags>
+    <repository type="git" url="https://github.com/vijaysingh/MimeCheck" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.pdb" target="lib\net8.0\MimeCheck.pdb" />
+  </files>
+</package>

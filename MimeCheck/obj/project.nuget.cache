@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BnByOmWZpWc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vijay.singh\\source\\repos\\Mime_Check\\MimeCheck\\MimeCheck\\MimeCheck.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vijay.singh\\.nuget\\packages\\microsoft.build.tasks.git\\8.0.0\\microsoft.build.tasks.git.8.0.0.nupkg.sha512",
+    "C:\\Users\\vijay.singh\\.nuget\\packages\\microsoft.sourcelink.common\\8.0.0\\microsoft.sourcelink.common.8.0.0.nupkg.sha512",
+    "C:\\Users\\vijay.singh\\.nuget\\packages\\microsoft.sourcelink.github\\8.0.0\\microsoft.sourcelink.github.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);CA1002;CA1008;CA1819;CA1721;CA2227;CS1591;CA1024;CA1062;CA1305;CA1502</NoWarn>
+    
+    <!-- Package Information -->
+    <PackageId>MimeCheck</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Vijay Pratap Singh</Authors>
+    <Company>MimeCheck</Company>
+    <Product>MimeCheck</Product>
+    <Description>A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats including images, documents, archives, audio/video, and executables. Includes ASP.NET Core integration with validation attributes, middleware, and dependency injection support.</Description>
+    <PackageTags>mime;mimetype;file-validation;magic-bytes;file-type;content-type;security;aspnetcore;file-upload;validation</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/vijaysingh/MimeCheck</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vijaysingh/MimeCheck</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    
+    <!-- Build Settings -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    
+    <!-- Package Settings -->
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <!-- Include README in package -->
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <!-- Exclude sample files from package -->
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="Program.cs" />
+    <Content Remove="appsettings*.json" />
+    <Content Remove="Properties\**" />
+  </ItemGroup>
+
+  <!-- ASP.NET Core framework reference -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <!-- Source Link for debugging -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

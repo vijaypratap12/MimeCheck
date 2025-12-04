@@ -1,0 +1,13 @@
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.deps.json
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.pdb
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.xml
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.AssemblyInfoInputs.cache
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.AssemblyInfo.cs
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.csproj.CoreCompileInputs.cache
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\refint\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.xml
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\MimeCheck.pdb
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net8.0\ref\MimeCheck.dll

@@ -1,0 +1,4 @@
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net6.0\MimeCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net6.0\MimeCheck.AssemblyInfoInputs.cache
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net6.0\MimeCheck.AssemblyInfo.cs
+C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Release\net6.0\MimeCheck.csproj.CoreCompileInputs.cache
