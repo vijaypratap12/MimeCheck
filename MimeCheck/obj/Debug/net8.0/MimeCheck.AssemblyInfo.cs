@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute(@"A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats including images, documents, archives, audio/video, and executables. Includes ASP.NET Core integration with validation attributes, middleware, and dependency injection support.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3f73ca705a40648a993dcb0490549a6c600b7c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MimeCheck")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MimeCheck")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
