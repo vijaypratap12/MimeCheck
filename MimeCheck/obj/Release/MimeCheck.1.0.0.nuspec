@@ -7,10 +7,10 @@
     <license type="expression">MIT</license>
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <readme>README.md</readme>
-    <projectUrl>https://github.com/vijaysingh/MimeCheck</projectUrl>
+    <projectUrl>https://github.com/vijaypratap12/MimeCheck</projectUrl>
     <description>A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats including images, documents, archives, audio/video, and executables. Includes ASP.NET Core integration with validation attributes, middleware, and dependency injection support.</description>
     <tags>mime mimetype file-validation magic-bytes file-type content-type security aspnetcore file-upload validation</tags>
-    <repository type="git" url="https://github.com/vijaysingh/MimeCheck" />
+    <repository type="git" url="https://github.com/vijaypratap12/MimeCheck" commit="e6fd1697e88d8b1fe5080ae83a803b4cf39b5012" />
     <dependencies>
       <group targetFramework="net8.0" />
     </dependencies>
@@ -21,8 +21,9 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.dll" target="lib\net8.0\MimeCheck.dll" />
-    <file src="C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.xml" target="lib\net8.0\MimeCheck.xml" />
-    <file src="C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\README.md" target="\README.md" />
+    <file src="C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.dll" target="lib\net8.0\MimeCheck.dll" />
+    <file src="C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\bin\Release\net8.0\MimeCheck.xml" target="lib\net8.0\MimeCheck.xml" />
+    <file src="C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\README.md" target="\README.md" />
+    <file src="C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\LICENSE" target="\LICENSE" />
   </files>
 </package>

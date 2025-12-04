@@ -16,8 +16,8 @@
     <Description>A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats including images, documents, archives, audio/video, and executables. Includes ASP.NET Core integration with validation attributes, middleware, and dependency injection support.</Description>
     <PackageTags>mime;mimetype;file-validation;magic-bytes;file-type;content-type;security;aspnetcore;file-upload;validation</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/vijaysingh/MimeCheck</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/vijaysingh/MimeCheck</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/vijaypratap12/MimeCheck</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vijaypratap12/MimeCheck</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     
@@ -33,9 +33,10 @@
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 
-  <!-- Include README in package -->
+  <!-- Include README and LICENSE in package from root folder -->
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <!-- Exclude sample files from package -->

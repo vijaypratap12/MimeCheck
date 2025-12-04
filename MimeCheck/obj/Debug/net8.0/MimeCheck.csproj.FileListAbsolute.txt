@@ -11,3 +11,17 @@ C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Debug\net8.0
 C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.xml
 C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.pdb
 C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\obj\Debug\net8.0\ref\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\bin\Debug\net8.0\MimeCheck.deps.json
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\bin\Debug\net8.0\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\bin\Debug\net8.0\MimeCheck.pdb
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\bin\Debug\net8.0\MimeCheck.xml
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.AssemblyInfoInputs.cache
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.AssemblyInfo.cs
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.csproj.CoreCompileInputs.cache
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.sourcelink.json
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\refint\MimeCheck.dll
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.xml
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\MimeCheck.pdb
+C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\obj\Debug\net8.0\ref\MimeCheck.dll

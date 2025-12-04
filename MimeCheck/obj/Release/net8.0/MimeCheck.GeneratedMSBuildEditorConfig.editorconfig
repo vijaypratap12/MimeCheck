@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MimeCheck
-build_property.ProjectDir = C:\Users\vijay.singh\source\repos\MimeCheck\MimeCheck\MimeCheck\
+build_property.ProjectDir = C:\Users\vijay.singh\source\repos\Mime_Check\MimeCheck\MimeCheck\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
