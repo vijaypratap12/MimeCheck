@@ -60,6 +60,27 @@ public sealed class MimeSignature
     public AdditionalCheck[]? AdditionalChecks { get; init; }
 
     /// <summary>
+    /// Gets alternate MIME-type strings that refer to the same format as <see cref="MimeType"/>.
+    /// Consulted only for "is this MIME type recognized?" lookups (see
+    /// <see cref="Validation.MimeValidator.IsKnownMimeType"/>).
+    /// The detector never returns an alias — it always returns <see cref="MimeType"/>.
+    /// </summary>
+    public string[] Aliases { get; init; } = [];
+
+    /// <summary>
+    /// Gets the canonical MIME type plus any aliases.
+    /// </summary>
+    public IEnumerable<string> AllMimeTypes
+    {
+        get
+        {
+            yield return MimeType;
+            foreach (var alias in Aliases)
+                yield return alias;
+        }
+    }
+
+    /// <summary>
     /// Checks if the provided bytes match this signature.
     /// </summary>
     /// <param name="data">The byte data to check.</param>

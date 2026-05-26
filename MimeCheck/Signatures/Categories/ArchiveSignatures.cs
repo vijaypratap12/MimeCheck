@@ -15,7 +15,8 @@ internal static class ArchiveSignatures
             MagicBytes = [0x50, 0x4B, 0x03, 0x04], // PK..
             Extension = ".zip",
             Description = "ZIP Archive",
-            Priority = 10
+            Priority = 10,
+            Aliases = ["application/x-zip-compressed", "application/x-zip"]
         };
 
         // ZIP (empty archive)
@@ -26,7 +27,8 @@ internal static class ArchiveSignatures
             MagicBytes = [0x50, 0x4B, 0x05, 0x06],
             Extension = ".zip",
             Description = "ZIP Archive (Empty)",
-            Priority = 10
+            Priority = 10,
+            Aliases = ["application/x-zip-compressed", "application/x-zip"]
         };
 
         // ZIP (spanned archive)
@@ -37,7 +39,8 @@ internal static class ArchiveSignatures
             MagicBytes = [0x50, 0x4B, 0x07, 0x08],
             Extension = ".zip",
             Description = "ZIP Archive (Spanned)",
-            Priority = 10
+            Priority = 10,
+            Aliases = ["application/x-zip-compressed", "application/x-zip"]
         };
 
         // RAR (v1.5+)
@@ -78,7 +81,8 @@ internal static class ArchiveSignatures
             MagicBytes = [0x75, 0x73, 0x74, 0x61, 0x72, 0x00, 0x30, 0x30], // ustar.00
             Offset = 257,
             Extension = ".tar",
-            Description = "TAR Archive (POSIX)"
+            Description = "TAR Archive (POSIX)",
+            Aliases = ["application/tar"]
         };
 
         // TAR (GNU)
@@ -89,7 +93,8 @@ internal static class ArchiveSignatures
             MagicBytes = [0x75, 0x73, 0x74, 0x61, 0x72, 0x20, 0x20, 0x00], // ustar  .
             Offset = 257,
             Extension = ".tar",
-            Description = "TAR Archive (GNU)"
+            Description = "TAR Archive (GNU)",
+            Aliases = ["application/tar"]
         };
 
         // GZIP
@@ -100,7 +105,8 @@ internal static class ArchiveSignatures
             MagicBytes = [0x1F, 0x8B],
             Extension = ".gz",
             AlternativeExtensions = [".gzip", ".tgz"],
-            Description = "GZIP Archive"
+            Description = "GZIP Archive",
+            Aliases = ["application/x-gzip"]
         };
 
         // BZIP2

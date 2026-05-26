@@ -5,6 +5,9 @@
 
 A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats.
 
+- [Documentation](https://mime-check-website.vercel.app/docs)
+- [Release Notes](https://github.com/vijaypratap12/MimeCheck/blob/main/CHANGELOG.md)
+
 ## Features
 
 - 🔍 **Magic Byte Detection** - Identify file types by reading actual file headers, not just extensions

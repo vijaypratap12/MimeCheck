@@ -208,6 +208,30 @@ public static class MimeTypes
     /// <summary>XML (application/xml)</summary>
     public const string Xml = "application/xml";
 
+    /// <summary>XML alternate form (text/xml)</summary>
+    public const string TextXml = "text/xml";
+
+    /// <summary>CSV (text/csv)</summary>
+    public const string Csv = "text/csv";
+
+    /// <summary>Markdown (text/markdown)</summary>
+    public const string Markdown = "text/markdown";
+
+    /// <summary>YAML (text/yaml)</summary>
+    public const string Yaml = "text/yaml";
+
+    /// <summary>XHTML (application/xhtml+xml)</summary>
+    public const string XHtml = "application/xhtml+xml";
+
+    /// <summary>JSON-LD (application/ld+json)</summary>
+    public const string JsonLd = "application/ld+json";
+
+    /// <summary>Form URL-encoded (application/x-www-form-urlencoded)</summary>
+    public const string FormUrlEncoded = "application/x-www-form-urlencoded";
+
+    /// <summary>Multipart form data (multipart/form-data)</summary>
+    public const string MultipartFormData = "multipart/form-data";
+
     #endregion
 
     #region Fonts

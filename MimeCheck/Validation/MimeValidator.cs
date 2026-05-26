@@ -284,6 +284,45 @@ public static class MimeValidator
     public static IEnumerable<string> GetSupportedMimeTypes()
         => SignatureDatabase.GetAllMimeTypes();
 
+    /// <summary>
+    /// Checks whether a string is a recognized MIME type — either a canonical type
+    /// or an alias known to the signature database, or a signature-less type in the
+    /// known registry. Case- and whitespace-insensitive.
+    /// Use this for validating user-supplied MIME type strings (form fields,
+    /// headers, configuration values).
+    /// </summary>
+    /// <param name="mimeType">The MIME type string to check.</param>
+    /// <returns>True if the string is a recognized MIME type; otherwise, false.</returns>
+    public static bool IsKnownMimeType(string? mimeType)
+    {
+        if (string.IsNullOrWhiteSpace(mimeType))
+            return false;
+
+        var trimmed = mimeType.Trim();
+
+        if (KnownMimeTypes.SignatureLess.Contains(trimmed))
+            return true;
+
+        foreach (var known in SignatureDatabase.GetAllMimeTypesIncludingAliases())
+        {
+            if (string.Equals(known, trimmed, StringComparison.OrdinalIgnoreCase))
+                return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Gets all recognized MIME type strings — canonical signatures, their aliases,
+    /// and signature-less types. For the narrower set of types detectable from file
+    /// bytes, use <see cref="GetSupportedMimeTypes"/> instead.
+    /// </summary>
+    public static IEnumerable<string> GetKnownMimeTypes()
+        => SignatureDatabase
+            .GetAllMimeTypesIncludingAliases()
+            .Concat(KnownMimeTypes.SignatureLess)
+            .Distinct(StringComparer.OrdinalIgnoreCase);
+
     #endregion
 }
 

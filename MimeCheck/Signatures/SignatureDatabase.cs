@@ -176,5 +176,18 @@ public static class SignatureDatabase
     {
         return ByMimeType.Keys;
     }
+
+    /// <summary>
+    /// Gets all signature MIME types including aliases.
+    /// Use for membership checks ("is this string a recognized MIME type?"), never for
+    /// detection output — the detector always returns canonical types via <see cref="GetAllMimeTypes"/>.
+    /// </summary>
+    /// <returns>A collection of canonical MIME types plus all registered aliases, de-duplicated.</returns>
+    public static IEnumerable<string> GetAllMimeTypesIncludingAliases()
+    {
+        return Signatures
+            .SelectMany(s => s.AllMimeTypes)
+            .Distinct(StringComparer.OrdinalIgnoreCase);
+    }
 }
 

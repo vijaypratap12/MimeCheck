@@ -15,7 +15,8 @@ internal static class ImageSignatures
             MagicBytes = [0xFF, 0xD8, 0xFF],
             Extension = ".jpg",
             AlternativeExtensions = [".jpeg", ".jpe", ".jfif"],
-            Description = "JPEG Image"
+            Description = "JPEG Image",
+            Aliases = ["image/jpg", "image/pjpeg"]
         };
 
         // PNG
@@ -85,7 +86,8 @@ internal static class ImageSignatures
             MagicBytes = [0x49, 0x49, 0x2A, 0x00], // II*.
             Extension = ".tiff",
             AlternativeExtensions = [".tif"],
-            Description = "TIFF Image (Little Endian)"
+            Description = "TIFF Image (Little Endian)",
+            Aliases = ["image/x-tiff"]
         };
 
         // TIFF (Big Endian)
@@ -96,7 +98,8 @@ internal static class ImageSignatures
             MagicBytes = [0x4D, 0x4D, 0x00, 0x2A], // MM.*
             Extension = ".tiff",
             AlternativeExtensions = [".tif"],
-            Description = "TIFF Image (Big Endian)"
+            Description = "TIFF Image (Big Endian)",
+            Aliases = ["image/x-tiff"]
         };
 
         // ICO
@@ -106,7 +109,8 @@ internal static class ImageSignatures
             Category = MimeCategory.Image,
             MagicBytes = [0x00, 0x00, 0x01, 0x00],
             Extension = ".ico",
-            Description = "ICO Icon"
+            Description = "ICO Icon",
+            Aliases = ["image/vnd.microsoft.icon"]
         };
 
         // CUR (Cursor)
