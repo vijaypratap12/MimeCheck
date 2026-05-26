@@ -14,7 +14,8 @@ internal static class AudioSignatures
             Category = MimeCategory.Audio,
             MagicBytes = [0x49, 0x44, 0x33], // ID3
             Extension = ".mp3",
-            Description = "MP3 Audio (ID3v2)"
+            Description = "MP3 Audio (ID3v2)",
+            Aliases = ["audio/mp3", "audio/x-mpeg"]
         };
 
         // MP3 (Frame sync)
@@ -24,7 +25,8 @@ internal static class AudioSignatures
             Category = MimeCategory.Audio,
             MagicBytes = [0xFF, 0xFB],
             Extension = ".mp3",
-            Description = "MP3 Audio (Frame Sync)"
+            Description = "MP3 Audio (Frame Sync)",
+            Aliases = ["audio/mp3", "audio/x-mpeg"]
         };
 
         // MP3 (Frame sync variant)
@@ -34,7 +36,8 @@ internal static class AudioSignatures
             Category = MimeCategory.Audio,
             MagicBytes = [0xFF, 0xFA],
             Extension = ".mp3",
-            Description = "MP3 Audio (Frame Sync)"
+            Description = "MP3 Audio (Frame Sync)",
+            Aliases = ["audio/mp3", "audio/x-mpeg"]
         };
 
         // MP3 (Frame sync variant)
@@ -44,7 +47,8 @@ internal static class AudioSignatures
             Category = MimeCategory.Audio,
             MagicBytes = [0xFF, 0xF3],
             Extension = ".mp3",
-            Description = "MP3 Audio (Frame Sync)"
+            Description = "MP3 Audio (Frame Sync)",
+            Aliases = ["audio/mp3", "audio/x-mpeg"]
         };
 
         // MP3 (Frame sync variant)
@@ -54,7 +58,8 @@ internal static class AudioSignatures
             Category = MimeCategory.Audio,
             MagicBytes = [0xFF, 0xF2],
             Extension = ".mp3",
-            Description = "MP3 Audio (Frame Sync)"
+            Description = "MP3 Audio (Frame Sync)",
+            Aliases = ["audio/mp3", "audio/x-mpeg"]
         };
 
         // WAV
@@ -65,6 +70,7 @@ internal static class AudioSignatures
             MagicBytes = [0x52, 0x49, 0x46, 0x46], // RIFF
             Extension = ".wav",
             Description = "WAV Audio",
+            Aliases = ["audio/x-wav", "audio/wave"],
             AdditionalChecks =
             [
                 new AdditionalCheck
@@ -142,7 +148,8 @@ internal static class AudioSignatures
             MagicBytes = [0x4D, 0x54, 0x68, 0x64], // MThd
             Extension = ".mid",
             AlternativeExtensions = [".midi"],
-            Description = "MIDI Audio"
+            Description = "MIDI Audio",
+            Aliases = ["audio/x-midi"]
         };
 
         // AIFF

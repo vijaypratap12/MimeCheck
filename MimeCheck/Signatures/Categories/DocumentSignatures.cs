@@ -14,7 +14,8 @@ internal static class DocumentSignatures
             Category = MimeCategory.Document,
             MagicBytes = [0x25, 0x50, 0x44, 0x46, 0x2D], // %PDF-
             Extension = ".pdf",
-            Description = "PDF Document"
+            Description = "PDF Document",
+            Aliases = ["application/x-pdf"]
         };
 
         // DOCX - Check for [Content_Types].xml with word/ reference
@@ -85,7 +86,8 @@ internal static class DocumentSignatures
             MagicBytes = [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1],
             Extension = ".doc",
             Description = "Microsoft Word Document (OLE)",
-            Priority = 50
+            Priority = 50,
+            Aliases = ["application/vnd.ms-word"]
         };
 
         yield return new MimeSignature
@@ -95,7 +97,8 @@ internal static class DocumentSignatures
             MagicBytes = [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1],
             Extension = ".xls",
             Description = "Microsoft Excel Spreadsheet (OLE)",
-            Priority = 50
+            Priority = 50,
+            Aliases = ["application/excel", "application/x-excel"]
         };
 
         yield return new MimeSignature

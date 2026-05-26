@@ -14,7 +14,8 @@ internal static class FontSignatures
             Category = MimeCategory.Font,
             MagicBytes = [0x00, 0x01, 0x00, 0x00],
             Extension = ".ttf",
-            Description = "TrueType Font"
+            Description = "TrueType Font",
+            Aliases = ["application/x-font-ttf", "application/font-sfnt"]
         };
 
         // OpenType Font (with CFF data)
@@ -24,7 +25,8 @@ internal static class FontSignatures
             Category = MimeCategory.Font,
             MagicBytes = [0x4F, 0x54, 0x54, 0x4F], // OTTO
             Extension = ".otf",
-            Description = "OpenType Font"
+            Description = "OpenType Font",
+            Aliases = ["application/x-font-otf"]
         };
 
         // WOFF (Web Open Font Format)
@@ -34,7 +36,8 @@ internal static class FontSignatures
             Category = MimeCategory.Font,
             MagicBytes = [0x77, 0x4F, 0x46, 0x46], // wOFF
             Extension = ".woff",
-            Description = "Web Open Font Format"
+            Description = "Web Open Font Format",
+            Aliases = ["application/font-woff"]
         };
 
         // WOFF2 (Web Open Font Format 2)
@@ -44,7 +47,8 @@ internal static class FontSignatures
             Category = MimeCategory.Font,
             MagicBytes = [0x77, 0x4F, 0x46, 0x32], // wOF2
             Extension = ".woff2",
-            Description = "Web Open Font Format 2"
+            Description = "Web Open Font Format 2",
+            Aliases = ["application/font-woff2"]
         };
 
         // EOT (Embedded OpenType)

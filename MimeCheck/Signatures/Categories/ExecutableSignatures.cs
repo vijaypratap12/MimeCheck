@@ -15,7 +15,8 @@ internal static class ExecutableSignatures
             MagicBytes = [0x4D, 0x5A], // MZ
             Extension = ".exe",
             AlternativeExtensions = [".dll", ".sys", ".scr", ".com"],
-            Description = "Windows Executable (PE)"
+            Description = "Windows Executable (PE)",
+            Aliases = ["application/x-msdos-program", "application/exe"]
         };
 
         // MSI (Microsoft Installer) - OLE Compound Document

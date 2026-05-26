@@ -5,6 +5,16 @@
 
 A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats.
 
+## What's New in 2.0.0
+
+Purely additive — your 1.x code compiles and runs identically.
+
+- **`MimeValidator.IsKnownMimeType(string)`** — validate user-supplied MIME-type strings (form fields, headers, config). Recognizes canonical types, aliases (e.g. `text/xml`, `image/jpg`, `application/x-zip-compressed`), and signature-less types (e.g. `text/csv`, `multipart/form-data`). Case- and whitespace-insensitive.
+- **`MimeSignature.Aliases`** — alternate MIME names co-located with byte signatures. Recognized by `IsKnownMimeType`; never returned by the detector.
+- **New `MimeTypes` constants**: `TextXml`, `Csv`, `Markdown`, `Yaml`, `XHtml`, `JsonLd`, `FormUrlEncoded`, `MultipartFormData`.
+
+See the [full changelog](https://github.com/vijaypratap12/MimeCheck/blob/main/CHANGELOG.md) for details.
+
 ## Features
 
 - 🔍 **Magic Byte Detection** - Identify file types by reading actual file headers, not just extensions

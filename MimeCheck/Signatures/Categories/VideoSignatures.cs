@@ -70,11 +70,12 @@ internal static class VideoSignatures
             MagicBytes = [0x52, 0x49, 0x46, 0x46], // RIFF
             Extension = ".avi",
             Description = "AVI Video",
+            Aliases = ["video/avi", "video/msvideo"],
             AdditionalChecks =
             [
                 new AdditionalCheck
                 {
-                    Bytes = [0x41, 0x56, 0x49, 0x20], // AVI 
+                    Bytes = [0x41, 0x56, 0x49, 0x20], // AVI
                     Offset = 8
                 }
             ]
@@ -99,11 +100,12 @@ internal static class VideoSignatures
             MagicBytes = [0x00, 0x00, 0x00],
             Extension = ".mov",
             Description = "QuickTime Video",
+            Aliases = ["video/mov"],
             AdditionalChecks =
             [
                 new AdditionalCheck
                 {
-                    Bytes = [0x66, 0x74, 0x79, 0x70, 0x71, 0x74, 0x20, 0x20], // ftypqt  
+                    Bytes = [0x66, 0x74, 0x79, 0x70, 0x71, 0x74, 0x20, 0x20], // ftypqt
                     Offset = 4
                 }
             ]
@@ -117,7 +119,8 @@ internal static class VideoSignatures
             MagicBytes = [0x6D, 0x6F, 0x6F, 0x76], // moov
             Offset = 4,
             Extension = ".mov",
-            Description = "QuickTime Video (moov)"
+            Description = "QuickTime Video (moov)",
+            Aliases = ["video/mov"]
         };
 
         // WebM
@@ -158,7 +161,8 @@ internal static class VideoSignatures
             MagicBytes = [0x30, 0x26, 0xB2, 0x75, 0x8E, 0x66, 0xCF, 0x11],
             Extension = ".wmv",
             AlternativeExtensions = [".asf"],
-            Description = "Windows Media Video"
+            Description = "Windows Media Video",
+            Aliases = ["video/wmv"]
         };
 
         // MPEG

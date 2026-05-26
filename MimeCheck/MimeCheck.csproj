@@ -9,12 +9,28 @@
     
     <!-- Package Information -->
     <PackageId>MimeCheck</PackageId>
-    <Version>1.1.0</Version>
+    <Version>2.0.0</Version>
     <Authors>Vijay Pratap Singh</Authors>
     <Company>MimeCheck</Company>
     <Product>MimeCheck</Product>
     <Description>A comprehensive MIME type validation library for .NET. Detect and validate file types using magic byte signatures with support for 50+ file formats including images, documents, archives, audio/video, and executables. Includes ASP.NET Core integration with validation attributes, middleware, and dependency injection support.</Description>
     <PackageTags>mime;mimetype;file-validation;magic-bytes;file-type;content-type;security;aspnetcore;file-upload;validation</PackageTags>
+    <PackageReleaseNotes>
+v2.0.0 — MIME string validation (additive, fully backwards-compatible)
+
+Added:
+- MimeValidator.IsKnownMimeType(string) and GetKnownMimeTypes() — validate user-supplied MIME-type strings against canonical types, their aliases, and signature-less types. Case- and whitespace-insensitive.
+- MimeSignature.Aliases (optional string[]) — alternate MIME names co-located with byte signatures (e.g. text/xml, image/jpg, application/x-zip-compressed, audio/mp3). Recognized by IsKnownMimeType but never returned by the detector.
+- SignatureDatabase.GetAllMimeTypesIncludingAliases().
+- MimeTypes constants: TextXml, Csv, Markdown, Yaml, XHtml, JsonLd, FormUrlEncoded, MultipartFormData.
+
+Unchanged:
+- MimeDetector.Detect continues to return canonical MIME types only.
+- MimeValidator.GetSupportedMimeTypes() continues to return only bytes-detectable types.
+- All existing constants, validation pipelines, AspNetCore middleware, attributes, and services are byte-for-byte compatible with 1.x.
+
+Full changelog: https://github.com/vijaypratap12/MimeCheck/blob/main/CHANGELOG.md
+    </PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/vijaypratap12/MimeCheck</PackageProjectUrl>
     <RepositoryUrl>https://github.com/vijaypratap12/MimeCheck</RepositoryUrl>

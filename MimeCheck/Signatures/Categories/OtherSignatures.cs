@@ -25,7 +25,8 @@ internal static class OtherSignatures
             Category = MimeCategory.Text,
             MagicBytes = [0x3C, 0x3F, 0x78, 0x6D, 0x6C], // <?xml
             Extension = ".xml",
-            Description = "XML Document"
+            Description = "XML Document",
+            Aliases = ["text/xml"]
         };
 
         // HTML (doctype)
